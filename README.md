@@ -12,7 +12,7 @@ This repository contains three subdirectories:
 2) Fragment Size
   - AllSieveData.xlsx - Spreadsheet containing sieve results for all lithologies in this study and in the study of Rae et al. (2020; Also available at http://www.doi.org/10.5281/zenodo.3987223)
 
-3)Fragment Shape
+3) Fragment Shape
   - ImageAnalysis - Contains a list of the samples where fragment shapes were analysed, all original and final thresholded images for fragments > 2 mm (LargeFragments) and for fragments between 0.5 and 2 mm (SmallFragments), the output image analysis of each image from Fiji, and python scripts used to analyse the results.
   - GeometricFragmentationAlgorithms - Three python scripts, one for each geometric algorithm analysed in this study. Each script generates a set images with increasing numbers of fragments using the specified algorithm, the script then analyses those generated images to determine the fragment shape distributions for each of those images.
 
