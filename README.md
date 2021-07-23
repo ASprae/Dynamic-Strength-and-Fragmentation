@@ -8,6 +8,7 @@ This repository contains three subdirectories:
   - PetrophysicalProperties.xlsx - Spreadsheet containing a summary of material properties determined in this study or derived from the literature, includes results from He-pycnometry.
   - Rae2021 - Directory containing spreadsheets with summaries of mechanical experiments in this study (Rae et al., 2021(?)) organised by lithology (SeeSst - Seeberger Sandstone, TaQu - Taunus Quartzite, SaLi - Savonnieres Limestone, CaMa - Carrara Marble). 
   - Rae2020 - Directory containing spreadsheets with summaries of mechanical experiments in the study of Rae et al. (2020) organised by experimental method. Also available at http://www.doi.org/10.5281/zenodo.3987223
+  - SHPBdata - Directory containing all raw SHPB data. Data is organised into five columns (time in seconds; voltage from 1st strain gauge on incident bar; voltage from 2nd strain gauge on incident bar; voltage from 1st strain gauge on transmission bar; voltage from 2nd strain gauge on transmission bar). Directory contains the python script used to process the data (compatible with Python 2.7).
 
 2) Fragment Size
   - AllSieveData.xlsx - Spreadsheet containing sieve results for all lithologies in this study and in the study of Rae et al. (2020; Also available at http://www.doi.org/10.5281/zenodo.3987223)
