@@ -6,6 +6,17 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from scipy import integrate
 
+# Notes on use
+
+# The user should change the parameters defined below (L20-37) to match the experiment required
+#
+# Additional changes may be required on L96-106, depending on which input file is used.
+# Seeberger Sandstone output files have ',' instead of '.' as decimal points
+# All other output files use '.' as decimal points.
+# If ',' is used, L102-106 should be uncommented and L97-101 should be commented out.
+# If '.' is used, L102-106 should be commented out and L97-101 should be uncommented.
+#
+
 #######################
 ## INPUT INFORMATION ##
 #######################
@@ -15,15 +26,14 @@ sample = 'SeeSst_SHPB_001_Ti25_30b_Al12b_0_001'
 sample_length = 42.00 # mm
 sample_diameter = 41.00 # mm
 
-striker_length = 0.25 # m
-striker_material = 'Ti' # Al, Ti, or Steel
-striker_velocity = np.nan # Unnecessary!
-
-t_sampling_f = 1.25E+6 #1.25E+6
-
 #Pulse Width Factor - Factors used to trim data correctly, values should be edited to cut the data over the correct interval
 ffactor = 6.0 # 6.0 - 7.0 usually works for the pulse-shapers in this study
 bfactor = 3.5 # 3.0 - 4.5 usually works for the pulse-shapers in this study
+
+striker_length = 0.25 # m
+striker_material = 'Ti' # Al, Ti, or Steel
+striker_velocity = np.nan # Unnecessary!
+t_sampling_f = 1.25E+6 #1.25E+6
 #######################
 
 ############################
@@ -47,9 +57,9 @@ else:
 C0 = np.sqrt(striker_E/striker_rho) # m/s
 
 striker_diameter = 50.0 # mm
-incident_length = 1.25000 #1.2525 #m
-#incident_length = 1.50000 #1.2525 #m
-transmitted_length = 1.0000 #1.0025 #m
+incident_length = 1.25000 # m
+#incident_length = 1.50000 # m
+transmitted_length = 1.0000 # m
 
 t_sampling_t = 1/t_sampling_f
 
